@@ -18,6 +18,7 @@ data "aws_availability_zones" "available" {}
 locals {
   common_tags = {
     Environment = var.Environment
+    BillingCode = var.billing_code
   }
 }
 
